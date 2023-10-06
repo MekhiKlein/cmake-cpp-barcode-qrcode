@@ -4,7 +4,7 @@ MESSAGE( STATUS "PROJECT_NAME: " ${PROJECT_NAME} )
 
 option(ARM32_BUILD "Build for ARM32" OFF)
 
-# Check platforms
+  Check platforms
 if (CMAKE_HOST_WIN32)
     set(WINDOWS 1)
 elseif(CMAKE_HOST_APPLE)
@@ -114,3 +114,4 @@ endif()
 # Use CTest
 include(CTest)
 add_test (BarcodeReaderRuns ${PROJECT_NAME})
+ 
